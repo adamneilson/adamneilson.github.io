@@ -7,6 +7,41 @@
 		<link rel="stylesheet" href="https://unpkg.com/tachyons/css/tachyons.min.css">
 		<link href="https://fonts.googleapis.com/css?family=Bree+Serif|Roboto+Slab" rel="stylesheet">
 		<link rel="apple-touch-icon" href="/img/apple-touch-icon.png">
+        <style>
+.speech-bubble {
+    background-color: #f8f8f8;
+    border: 1px solid #c4c4c4;
+    border-radius: 0.8rem;
+    width:94%;
+    max-width: 400px;
+    text-align: center;
+    padding: 2rem 1rem;
+    position: relative;
+    margin: 2em 0em;
+    display: inline-block;
+}
+.speech-bubble .arrow {
+    border-style: solid;
+    position: absolute;
+}
+.bottom {
+    border-color: #c4c4c4 transparent transparent transparent;
+    border-width: 28px 8px 0px 8px;
+    bottom: -28px;
+}
+.bottom:after {
+    border-color: #f8f8f8 transparent transparent transparent;
+    border-style: solid;
+    border-width: 27px 7px 0px 7px;
+    bottom: 1px;
+    content: "";
+    position: absolute;
+    left: -7px;
+}
+.farewell {
+  font-size: 4rem;
+}
+        </style>
 	</head>
 	<body style="background-color: black">
 		<div id="app"></div>
